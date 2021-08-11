@@ -1,0 +1,17 @@
+version: '3'
+services:
+  avalanche-testnet:
+    build: ./testnet/
+    image: "avalanche-testnet:latest"
+    container_name: avalanche-testnet
+    ports:
+      - "127.0.0.1:9650:9650"
+      - "127.0.0.1:9652:9652"
+      - "127.0.0.1:9654:9654"
+      - "127.0.0.1:9656:9656"
+      - "127.0.0.1:9658:9658"
+    volumes:
+      - ./testnet/testnet.sh:/home/avalanche/testnet.sh
+      - ./testnet/generate_c_chain_traffic.sh:/home/avalanche/generate_c_chain_traffic.sh
+      # - ./testnet/chain_config:/root/.avalanchego/configs/chains
+    command: "/home/avalanche/testnet.sh"

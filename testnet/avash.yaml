@@ -1,0 +1,6 @@
+avalancheLocation: /home/avalanche/avalanchego/build/avalanchego
+datadir: /home/avalanche/avash_data
+log:
+  terminal: info
+  logfile: info
+  dir: /home/avalanche/logs

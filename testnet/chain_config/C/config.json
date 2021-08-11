@@ -1,0 +1,8 @@
+{
+  "eth-api-enabled": true,
+  "tx-pool-api-enabled": true,
+  "debug-api-enabled": true,
+  "personal-api-enabled": true,
+  "web3-api-enabled": true,
+  "pruning-enabled": false
+}
