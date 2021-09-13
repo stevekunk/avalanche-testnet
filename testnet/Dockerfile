@@ -16,7 +16,7 @@ ENV PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 WORKDIR /home/avalanche
 
-ENV TAG v1.4.12
+ENV TAG v1.5.3
 RUN git clone https://github.com/ava-labs/avalanchego.git && \
     cd avalanchego && \
     git pull && \
